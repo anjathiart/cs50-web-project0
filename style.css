@@ -9,6 +9,10 @@
   background-image: linear-gradient(to bottom, rgba(2, 102, 112, 0.52), rgba(252, 225, 129, 0.52)), url("img-dylan-1.jpg");
 }
 
+#quotes {
+  background-color: #FeF9C7;
+}
+
 h1, h2 {
   color: #026670;
 }
@@ -64,14 +68,22 @@ h2 {
 .card, .lyric-quote, .bob-quote {
   position: relative;
   min-width: 200px;
-  min-height: 200px;
-  line-height: 1.25;
+  min-height: 250px;
+  line-height: 1.5;
   border-radius: 1rem;
   padding: 1rem;
   width: auto;
   height: auto;
-  margin-top: 1rem;
+}
+
+.row {
   margin-bottom: 2rem;
+}
+.row:last-child {
+  margin-bottom: 6rem;
+}
+.row:first-child {
+  margin-top: 2rem;
 }
 
 input[type=checkbox][readonly] {
@@ -112,7 +124,8 @@ input[type=checkbox][readonly] {
 }
 
 .lyric-quote {
-  background-color: rgba(2, 102, 112, 0.7);
+  background-color: rgba(2, 102, 112, 0.5);
+  color: rgba(255, 255, 255, 0.9);
 }
 .lyric-quote > p:last-child {
   padding: 0px;
